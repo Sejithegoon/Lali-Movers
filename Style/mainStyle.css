@@ -1,0 +1,110 @@
+/* GLOBAL BRANDING: MATTE & STRONG */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Ubuntu", sans-serif;
+}
+
+body {
+    background-color: #0f0f11; /* Dark Blue-Black */
+    color: #eeeeef; /* Off White */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-top: 90px;
+}
+
+/* NAVBAR: Logo & Matte Style */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    padding: 10px 50px;
+    background: #0f0f11;
+    border-bottom: 4px solid #044c92;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 60px;
+    width: auto;
+    display: block;
+}
+
+.navLinks {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.navLinks a {
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #a7a8ab;
+    letter-spacing: 1px;
+    transition: 0.3s ease;
+}
+
+.navLinks a:hover {
+    color: #eeeeef;
+}
+
+/* BUTTONS: Solid & Confident */
+button, .submit-btn, .cta-button {
+    background: #044c92 !important;
+    color: #eeeeef !important;
+    border: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 15px 35px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    border-radius: 2px;
+}
+
+button:hover {
+    background: #033a70 !important;
+    transform: translateY(-2px);
+}
+
+/* FOOTER: Matte Corporate */
+.footer {
+    background: #0a0a0c;
+    border-top: 6px solid #044c92;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.footer h3 {
+    color: #044c92;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.hashtags { color: #a7a8ab; margin: 15px 0; }
+
+.insta-link {
+    display: inline-block;
+    border: 2px solid #044c92;
+    color: #eeeeef;
+    padding: 10px 25px;
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .navbar { padding: 10px 20px; }
+    .logo img { height: 45px; }
+    .navLinks { gap: 15px; }
+}
