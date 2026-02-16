@@ -18,45 +18,60 @@
         </ul>
     </nav>
 
-    <main class="quote-container">
-        <div class="quote-header">
-            <h1>Request a Professional Quote</h1> 
-            <p>Fill out the details below and our logistics team will respond within 24 hours.</p>
-        </div>
+   <main class="quote-container">
+    <div class="quote-header">
+        <h1>Request a Professional Quote</h1> 
+        <p>Fill out the details below and our logistics team will respond within 24 hours.</p>
+    </div>
 
-        <div class="form-wrapper">
-            <form action="https://formspree.io/f/mwvnvnpa" method="POST" class="quote-form">
-                <input type="hidden" name="_next" value="https://yourdomain.com/Pages/thank-you.html">
-                
-                <div class="form-group">
-                    <label>Full Name</label>
-                    <input type="text" name="name" required>
-                </div>
+    <div class="form-wrapper">
+        <form action="https://formspree.io/f/xeelgyeq" method="POST" class="quote-form">
+            <input type="hidden" name="_next" value="https://sejithegoon.github.io/Lali-Movers/Pages/thank-you.html">
+            
+            <div class="form-group">
+                <label>Full Name</label>
+                <input type="text" name="name" required>
+            </div>
 
-                <div class="form-group">
-                    <label>Email Address</label>
-                    <input type="email" name="email" required>
-                </div>
+            <div class="form-group">
+                <label>Email Address</label>
+                <input type="email" name="email" required>
+            </div>
 
-                <div class="form-group">
-                    <label>Service Type</label>
-                    <select name="service" required>
-                        <option value="Residential">Residential Moving</option>
-                        <option value="Delivery">Furniture Delivery</option>
-                        <option value="Junk">Junk Removal</option>
-                    </select>
-                </div>
+            <div class="form-group">
+                <label>Phone Number</label>
+                <input type="tel" name="phone" placeholder="204-000-0000" required>
+            </div>
 
-                <div class="form-group">
-                    <label>Move Details</label>
-                    <textarea name="message" required placeholder="Number of rooms, items, or specific requests..."></textarea>
-                </div>
+            <div class="form-group">
+                <label>Preferred Move Date</label>
+                <input type="date" name="date" id="moveDate" required>
+            </div>
 
-                <button type="submit" class="submit-btn">Submit Request</button>
-            </form>
-        </div>
-    </main>
+            <div class="form-group">
+                <label>Service Type</label>
+                <select name="service" required>
+                    <option value="Residential">Residential Moving</option>
+                    <option value="Delivery">Furniture Delivery</option>
+                    <option value="Junk">Junk Removal</option>
+                    <option value="Assembly">Furniture Assembly</option>
+                </select>
+            </div>
 
+            <div class="form-group">
+                <label>Move Details</label>
+                <textarea name="message" required placeholder="Number of rooms, specific items (sofa, piano, etc.), or any special requests..."></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Submit Request</button>
+        </form>
+    </div>
+</main>
+
+<script>
+    const today = new Date().toISOString().split('T')[0];
+    document.getElementById('moveDate').setAttribute('min', today);
+</script>
     <footer class="footer">
         <div class="footer-content">
             <h3>Lali Movers</h3>
