@@ -1,0 +1,48 @@
+# Lali Movers — static site (GitHub Pages). Only the site files should be committed.
+
+# OS files
+.DS_Store
+._*
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Editors / IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.sublime-project
+*.sublime-workspace
+
+# Local tooling (Claude Code preview config, etc.)
+.claude/
+
+# Secrets / local env (never commit keys)
+.env
+.env.*
+
+# Logs & temp files
+*.log
+*.tmp
+*.bak
+tmp/
+temp/
+
+# If build tools or scripts are ever added
+node_modules/
+package-lock.json.bak
+__pycache__/
+*.pyc
+.cache/
+dist/
+
+# Original high-res photo exports / design source files (keep web-ready images in Images/)
+*.psd
+*.ai
+*.sketch
+*.fig
+*.xcf
+raw-photos/
